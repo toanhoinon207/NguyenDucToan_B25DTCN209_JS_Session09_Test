@@ -16,10 +16,10 @@
             let delNegativeNum=revenues.filter(function(revenue){
                 return revenue>0;
             });
-            let total=delNegativeNum.reduce(function(sum,revenue){
+            let totalRevenue=delNegativeNum.reduce(function(sum,revenue){
                 return sum+revenue;
             },0);
-            console.log(`Tổng doanh thu: ${total}`);
+            console.log(`Tổng doanh thu: ${totalRevenue}`);
         </script>
     </body>
 </html>
